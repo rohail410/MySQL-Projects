@@ -100,7 +100,7 @@ SELECT `year_month`, monthly_layoffs, SUM(monthly_layoffs) OVER(ORDER BY `year_m
 FROM CTE_1
 ;
 
---
+-- Top 5 companies with highest total laid off each year from 2020 to 2023
 
 SELECT company, Year(`date`) AS `year`, SUM(total_laid_off)
 FROM layoffs_staging2
